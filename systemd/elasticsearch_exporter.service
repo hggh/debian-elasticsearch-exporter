@@ -1,0 +1,9 @@
+[Unit]
+Description=ElasticSearch Exporter
+
+[Service]
+EnvironmentFile=/etc/default/elasticsearch_exporter
+ExecStart=/usr/bin/elasticsearch_exporter $OPTIONS
+
+[Install]
+WantedBy=multi-user.target
