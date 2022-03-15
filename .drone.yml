@@ -40,7 +40,7 @@ steps:
         - push
 
   - name: package for jammy
-    image: ubuntu:22.04
+    image: ubuntu:20.04
     commands:
       - export DEBIAN_FRONTEND=noninteractive
       - export CODENAME=jammy
